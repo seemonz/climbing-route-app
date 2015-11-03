@@ -1,7 +1,7 @@
-Sinatra
+Climbing Route App
 =============
 
-Brought to you by Lighthouse Labs
+Brought to you by me!
 
 ## Getting Started
 
