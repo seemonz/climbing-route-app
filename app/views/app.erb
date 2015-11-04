@@ -3,7 +3,7 @@
   <h1>Climbing Routes</h1>
 
   <div class="six columns" id="route-form">
-    <form class="" action="index.html" method="post">
+    <form id="new-route-form" action="/routes" method="post">
       <input type="text" name="name" placeholder="Route Name" >
       <br>
       <input type="text" name="grade" placeholder="Grade">
@@ -12,12 +12,12 @@
       <br>
       <input type="text" name="location" placeholder="Location">
       <br>
-      <input type="button" name="submit" value="Submit">
+      <button>Submit</button>
     </form>
   </div>
 
   <div class="four columns">
-    <p id="route-list"></p>
+    <ul id="route-list"></ul>
   </div>
 
 </div>
