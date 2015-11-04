@@ -18,4 +18,5 @@ post '/routes' do
   location: params[:location]
   )
   @new_route.save
+  halt 200, {'Content-Type' => 'application/json'},@new_route.to_json
 end
