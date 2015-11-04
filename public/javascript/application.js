@@ -12,19 +12,19 @@ $(function() {
   }).done(populateRouteList);
 
   function populateRouteList(routes) {
-    routes.forEach(appendRoute);
+    routes.forEach(prependRoute);
   }
 
-  function appendRoute(route) {
-    $('<p>').text(route.name + " " + route.grade).prependTo(routeList);
+  function prependRoute(route) {
+    $('<p>').text(route.name + " " + route.grade + " : " + route.location).prependTo(routeList);
   }
-
+  // post new route and append
   newRouteForm.on('submit', function(event) {
     $.ajax({
       url: newRouteForm.attr('action'),
       method: newRouteForm.attr('method'),
       data: newRouteForm.serialize()
-    }).done(appendRoute)
+    }).done(prependRoute)
     return false;
   });
 
