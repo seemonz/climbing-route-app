@@ -16,7 +16,7 @@ $(function() {
   }
 
   function appendRoute(route) {
-    routeList.text(route.name).appendTo(routeList);
+    $('<p>').text(route.name + " " + route.grade).prependTo(routeList);
   }
 
   newRouteForm.on('submit', function(event) {
