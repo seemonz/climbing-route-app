@@ -1,4 +1,16 @@
 
-.container {
+#route-list {
+  display: none;
+  width: 300px;
+}
 
+#route-hidden {
+  display: none;
+}
+
+p {
+  background-color: #EBEBEB;
+  border-radius: 5px;
+  border: solid #C9C9C9 1px;
+  padding: 5px;
 }

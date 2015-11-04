@@ -9,7 +9,9 @@ $(function() {
     url: '/routes',
     method: 'get',
     dataType: 'json'
-  }).done(populateRouteList);
+  })
+  .done(populateRouteList)
+  .done(fadeInRoutes);
 
   function populateRouteList(routes) {
     routes.forEach(prependRoute);
@@ -31,5 +33,9 @@ $(function() {
     });
     return false;
   });
+
+  function fadeInRoutes() {
+    routeList.fadeIn();
+  }
 
 });
