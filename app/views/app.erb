@@ -1,0 +1,23 @@
+
+<div class="container">
+  <h1>Climbing Routes</h1>
+
+  <div class="six columns" id="route-form">
+    <form id="new-route-form" action="/routes" method="post">
+      <input type="text" name="name" placeholder="Route Name" >
+      <br>
+      <input type="text" name="grade" placeholder="Grade">
+      <br>
+      <input type="text" name="description" placeholder="Route Description">
+      <br>
+      <input type="text" name="location" placeholder="Location">
+      <br>
+      <button>Submit</button>
+    </form>
+  </div>
+
+  <div class="four columns">
+    <div id="route-list"></div>
+  </div>
+
+</div>
