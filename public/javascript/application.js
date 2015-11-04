@@ -10,7 +10,7 @@ $(function() {
     method: 'get',
     dataType: 'json'
   }).done(populateRouteList);
-  
+
   function populateRouteList(routes) {
     routes.forEach(appendRoute);
   }
