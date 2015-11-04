@@ -24,7 +24,11 @@ $(function() {
       url: newRouteForm.attr('action'),
       method: newRouteForm.attr('method'),
       data: newRouteForm.serialize()
-    }).done(prependRoute)
+    })
+    .done(prependRoute)
+    .done(function() {
+      newRouteForm[0].reset();
+    });
     return false;
   });
 
