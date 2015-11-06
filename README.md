@@ -1,6 +1,7 @@
 Climbing Route App
 =============
 
+Basic List - Add routes you've climbed.
 Brought to you by me!
 
 ## Getting Started
